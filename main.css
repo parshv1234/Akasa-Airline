@@ -1,0 +1,133 @@
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #2b3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav a {
+    color: #ffc107;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #ffc107;
+    color: #2b3e50;
+    transform: scale(1.1);
+}
+
+.login-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 400px;
+    transition: transform 0.2s;
+    margin-top: 50px;
+}
+
+.login-container:hover {
+    transform: scale(1.02);
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0079c1;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #005f8d;
+}
+
+.scan-button {
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.scan-button:hover {
+    background-color: #45a049;
+}
+
+.scan-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px dashed #0079c1;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+footer {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #777;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Styles for the main content sections */
+main section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+main section:hover {
+    transform: translateY(-5px);
+}
+
+main section img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}

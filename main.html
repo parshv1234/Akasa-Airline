@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akasa Airlines</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ3Gq_woK4rbx6iyGpcNLtyaO4ks5dmUjDpw&s" type="image/png">
+</head>
+<body>
+
+    <!-- Sign-In Form -->
+    <div id="login-container" class="login-container">
+        <h2>Login</h2>
+        <form onsubmit="login(event)">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+        <div class="footer">
+            <a href="#">Forgot Password?</a> | 
+            <a href="#">Create an Account</a>
+        </div>
+        <div class="scan-container">
+            <p>Or</p>
+            <button class="scan-button" onclick="alert('Scan to Login feature coming soon!')">Scan to Login</button>
+        </div>
+    </div>
+
+    <!-- Main Features Section (Initially Hidden) -->
+    <div id="main-content" class="hidden">
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Akasa_Air_logo_with_slogan.png" alt="Akasa Air Logo">
+            <h1><u>Akasa Airways</u></h1>
+            <nav>
+                <ul>
+                    <li><a href="#communication">Air Hostess Communication</a></li>
+                    <li><a href="#food">In-Flight Food Ordering</a></li>
+                    <li><a href="#direct-communication">Direct Communication</a></li>
+                    <li><a href="#seat-exchange">Seat Exchange Facility</a></li>
+                    <li><a href="#medical-assistance">Medical Assistance Notification</a></li>
+                    <li><a href="#flight-status">Flight Status Update</a></li>
+                    <li><a href="#entertainment">Entertainment Options</a></li>
+                    <li><a href="#feedback">Feedback Options</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <img src="https://cdn-icons-png.flaticon.com/512/2636/2636632.png" alt="Air Hostess">
+                <h2 id="communication">Air Hostess Communication</h2>
+                <p>If you need any assistance, click the button to notify the air hostess.</p>
+                <button onclick="callAirHostess()">Call Air Hostess</button>
+            </section>
+
+            <section>
+                <h2 id="food">In-Flight Food Menu</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnvbSVAh8Q3Tw28Ty7QVWlfofIYTTHBBNvAQ&s" alt="Food Menu">
+                <p>Choose your meal:</p>
+                <select name="food" id="food">
+                    <option value="chicken">Chicken Meal</option>
+                    <option value="vegetarian">Vegetarian Meal</option>
+                    <option value="seafood">Seafood Meal</option>
+                    <option value="vegan">Vegan Meal</option>
+                </select>
+                <button onclick="orderFood()">Order Food</button>
+            </section>
+
+            <section>
+                <img src="https://w7.pngwing.com/pngs/915/706/png-transparent-blue-call-icon-dialer-android-google-play-telephone-phone-blue-text-telephone-call.png" alt="Direct Call">
+                <h2 id="direct-communication">Direct Communication</h2>
+                <button onclick="makeCall()">Make Call</button>
+            </section>
+
+            <section>
+                <img src="https://cdn-icons-png.flaticon.com/512/4225/4225827.png" alt="Seat Exchange" style="max-width: 100px;">
+                <h2 id="seat-exchange">Seat Exchange Facility</h2>
+                <button onclick="requestSeatExchange()">Request Seat Exchange</button>
+            </section>
+
+            <section>
+                <img src="https://cdn-icons-png.flaticon.com/512/3082/3082302.png" alt="Medical Assistance" style="max-width: 100px;">
+                <h2 id="medical-assistance">Medical Assistance Notification</h2>
+                <button onclick="notifyMedicalAssistance()">Notify Medical Assistance</button>
+            </section>
+
+            <section>
+                <img src="https://cdn-icons-png.flaticon.com/512/2268/2268180.png" alt="Flight Status" style="max-width: 100px;">
+                <h2 id="flight-status">Flight Status Update</h2>
+                <button onclick="checkFlightStatus()">Check Flight Status</button>
+                <p id="flight-status-message">Flight Status: </p>
+            </section>
+
+            <section>
+                <img src="https://cdn-icons-png.flaticon.com/512/3625/3625710.png" alt="Entertainment Options" style="max-width: 100px;">
+                <h2 id="entertainment">Entertainment Options</h2>
+                <button onclick="viewEntertainment()">View Entertainment Options</button>
+                <div id="entertainment-options" class="hidden">
+                    <p>Movies, TV Shows, Music, Games, etc.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Akasa Airlines</p>
+        </footer>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
